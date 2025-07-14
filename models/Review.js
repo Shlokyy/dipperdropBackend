@@ -5,7 +5,7 @@ const reviewSchema = new mongoose.Schema({
   name: { type: String, required: true },
   email: { type: String, required: true },
   rating: { type: Number, required: true, min: 1, max: 5 },
-  title: { type: String, required: true },
+  title: { type: String, required: false },
   comment: { type: String },
   images: [{ type: String }],
   verified: { type: Boolean, default: false },
